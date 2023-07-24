@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  test_poetry1:
+    # fails
+    container_name: test_poetry1
+    tty: true
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+  test_poetry2:
+    # good
+    container_name: test_poetry2
+    build:
+      context: ./
+      dockerfile: ./Dockerfile

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "test-docker-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Stefan Hochuli"]
+readme = "README.md"
+# packages = [{include = "test_docker_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+# a random dependency
+requests = "^2.31.0"
+
+[tool.poetry.group.extensions.dependencies]
+# a dependency, only used for the extension
+geomet = "^1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
